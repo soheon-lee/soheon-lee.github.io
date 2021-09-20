@@ -2,7 +2,7 @@
 emoji: 👑
 title: Jupyter notebook과 pandas 사용하기, CSV파일 MySQL DB에 저장하기
 date: '2020-02-23 19:00:00'
-author: 이소헌
+author: 이워크
 tags: django python 위코드 wecode 장고 MySQL jupyterNotebook pandas csv
 categories: 개발블로그
 ---

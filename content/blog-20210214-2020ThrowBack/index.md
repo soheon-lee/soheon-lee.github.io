@@ -2,7 +2,7 @@
 emoji: 👑
 title: 10개월차 코딩 부트캠프 멘토, 2020년 회고록
 date: '2021-02-14 19:00:00'
-author: 이소헌
+author: 이워크
 tags: 위코드 wecode 회고록
 categories: 개발블로그
 ---

@@ -2,7 +2,7 @@
 emoji: 👑
 title: Django에 MySQL 연결하여 데이터 저장하기
 date: '2020-02-17 19:00:00'
-author: 이소헌
+author: 이워크
 tags: django python 위코드 wecode 장고 MySQL
 categories: 개발블로그
 ---

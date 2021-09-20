@@ -2,7 +2,7 @@
 emoji: 👑
 title: Django로 스트리밍 하기 part2 - 중간 재생과 Unit test
 date: '2020-03-15 21:00:00'
-author: 이소헌
+author: 이워크
 tags: python 위코드 wecode Django Streaming
 categories: 개발블로그
 ---

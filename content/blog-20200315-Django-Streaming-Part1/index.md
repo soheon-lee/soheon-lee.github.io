@@ -2,7 +2,7 @@
 emoji: 👑
 title: Django로 스트리밍 하기 part1 - binary streaming
 date: '2020-03-15 19:00:00'
-author: 이소헌
+author: 이워크
 tags: python 위코드 wecode Django streaming
 categories: 개발블로그
 ---

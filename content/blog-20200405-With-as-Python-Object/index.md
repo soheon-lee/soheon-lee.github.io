@@ -2,7 +2,7 @@
 emoji: 👑
 title: With as로 열 수 있는 파이썬 객체 생성하기
 date: '2020-04-05 19:00:00'
-author: 이소헌
+author: 이워크
 tags: python 위코드 wecode withAs
 categories: 개발블로그
 ---

@@ -2,7 +2,7 @@
 emoji: 👑
 title: 프로그램 추가 설치 없는 alias로 터미널 살의 질 개선하기
 date: '2020-03-14 16:00:00'
-author: 이소헌
+author: 이워크
 tags: 위코드 wecode 위코드풀스택 wecodefullstack terminal bash zsh
 categories: 개발블로그
 ---

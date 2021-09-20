@@ -11,10 +11,10 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `이소헌`,
+    name: `이워크`,
     bio: {
-      role: `개발자`,
-      description: ['서비스의 영향력을 생각하는', '문제를 정의하는'],
+      role: `일하는 사람,`,
+      description: ['이 세상에 필요한걸 만들며', '서비스의 영향력을 생각하며', '문제를 정의하며'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
     social: {

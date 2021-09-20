@@ -2,7 +2,7 @@
 emoji: 👑
 title: Django과 Reverse relation과 related_name
 date: '2020-06-14 19:00:00'
-author: 이소헌
+author: 이워크
 tags: django python related_name 위코드 wecode 장고 역참조
 categories: 개발블로그
 ---

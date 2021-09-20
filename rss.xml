@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 06:36:49 GMT</lastBuildDate><item><title><![CDATA[Django과 Reverse relation과 related_name]]></title><description><![CDATA[정참조와 역참조 객체 서로 호출하기 데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어,  테이블과 사용자의 직업인  테이블이 있다. 두 테이블은 N:…]]></description><link>https://www.zoomkoding.com/blog-20210614-Django-Related_name/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210614-Django-Related_name/</guid><pubDate>Sun, 14 Jun 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;정참조와-역참조-객체-서로-호출하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%B0%B8%EC%A1%B0%EC%99%80-%EC%97%AD%EC%B0%B8%EC%A1%B0-%EA%B0%9D%EC%B2%B4-%EC%84%9C%EB%A1%9C-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0&quot; aria-label=&quot;정참조와 역참조 객체 서로 호출하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정참조와 역참조 객체 서로 호출하기&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 06:39:24 GMT</lastBuildDate><item><title><![CDATA[Django과 Reverse relation과 related_name]]></title><description><![CDATA[정참조와 역참조 객체 서로 호출하기 데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어,  테이블과 사용자의 직업인  테이블이 있다. 두 테이블은 N:…]]></description><link>https://www.zoomkoding.com/blog-20210614-Django-Related_name/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210614-Django-Related_name/</guid><pubDate>Sun, 14 Jun 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;정참조와-역참조-객체-서로-호출하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%B0%B8%EC%A1%B0%EC%99%80-%EC%97%AD%EC%B0%B8%EC%A1%B0-%EA%B0%9D%EC%B2%B4-%EC%84%9C%EB%A1%9C-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0&quot; aria-label=&quot;정참조와 역참조 객체 서로 호출하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정참조와 역참조 객체 서로 호출하기&lt;/h1&gt;
 &lt;p&gt;데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어, &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 테이블과 사용자의 직업인 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 테이블이 있다. 두 테이블은 N:1 관계에 있으며, &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 객체가 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 객체를 참조하고 있다. &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 가 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 을 선택하여 입사 원서를 작성한다고 가정해보자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;models&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Model&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     name	&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; models&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;CharField&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max_length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -117,10 +117,53 @@ pip &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; jupyter
 jupyter notebook&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;셸에서 바로 실행시키면 된다.&lt;br&gt;
 블럭씩 실행시키는 방법 -&gt; &lt;code class=&quot;language-text&quot;&gt;shift+enter&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;image/jupyter_notebook.png&quot; alt=&quot;jupyer_notebook_screen_shot&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVQoz5VSXXOrIBD1//+3e5+SaZLGxi9EQQVRUEk6pwttM2nnTmbuw8qy4NlzzpKsqwfXNZhgMNrg/fYO7z3Wdf3vuF6vSPzm8cJesE/3OGZHvBav4G0D5xy2dbtfXpYl1p7Ftm1IbtcbDvUB+8MO+90Of09/cCxOKFmFoi7BGENZlpjmOYI+i6AsCZKrpkYeACoGKXp0UkLIBr2SGLoOnWhhpikyDUz+BRbqEdD7jZhUSPMcFW8guh6D0tDjCGPMV4zQWmMi0GfSo2RPH2UULuwNlzRFXmTIywvS9Iz07QzRigimlPoBGJm5kP9iGGQEOYMekBUVDeWCgldoST6nfVfVWHoFR6xtN2DuB9iWrKBGrZBQsocWwSIJZy2SZXHUeY4ssrzC6ZyioEFI8k6LDkZ2sHR+l2Y/V0s/2we5YR8lB7ozTVCRZ5y65pyTlxwzdY6sAqPRwJkJdqA91cKZHRRmim/5d8mBYQQkhnnNUTYtspqRd22UaB9ArR4/81AnG2Y6c9FL9wVIDEMSAMNUi7oGJ5mBfrxE66PMH/n3+uvZfACIhEdHg2mASAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;jupyer_notebook_screen_shot&quot;
+        title=&quot;jupyer_notebook_screen_shot&quot;
+        src=&quot;/static/23bf4b42421084e1dd992b9609b53784/37523/jupyter_notebook.png&quot;
+        srcset=&quot;/static/23bf4b42421084e1dd992b9609b53784/e9ff0/jupyter_notebook.png 180w,
+/static/23bf4b42421084e1dd992b9609b53784/f21e7/jupyter_notebook.png 360w,
+/static/23bf4b42421084e1dd992b9609b53784/37523/jupyter_notebook.png 720w,
+/static/23bf4b42421084e1dd992b9609b53784/d5bfb/jupyter_notebook.png 1072w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;오랜만에 쓰는 주피터 노트북 반가워 ㅎ.ㅎ&lt;/p&gt;
 &lt;h2 id=&quot;jupyter-notebook을-활용하면&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jupyter-notebook%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%98%EB%A9%B4&quot; aria-label=&quot;jupyter notebook을 활용하면 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;jupyter notebook을 활용하면!&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;image/jupyter_notebook_example.png&quot; alt=&quot;j_n_example&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 49.44444444444444%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABW0lEQVQoz52S226DMBBE+f9/i9QoTfIQEW7magwEsCEGM107qOpb0650xJqVxztre3oxUJOGqAVYnCIIA5RZjr6qMeYVBkKK9kXzwtaqmqOua/S8BufcMQwDPOxRliXiMEEUxgjvdwiWYmQkTDihtsNYCYwlx1hwSBJV44j5+cQ8z45pmuAteqHkiaYRKIoSfd+j6zrI7gH16F/0AxSdbnMrLNuHq0spnYhSyn2doKETVjWBpQyMuuK8gu/7ZD2ET51erleqpTDGwGwbDHa2Hfv/B9+WoygkYqS0+Xj8wPl8xoU4HA643W7YaPM74a2rgdYrWW7QWjtkQwjh1nYMVVW5XGuNZVl+xVtpmFoqZFlGlhmShC4mipzouq6uM2vlHTEniN2KtfV5OpHdo7N5DwL8JzxDeoYSa42xBHmeuy7tG7Md/hVP0w1P3UDza5EWKT2dwrVubdq5/ZUv7QUBY+aRK5UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;j_n_example&quot;
+        title=&quot;j_n_example&quot;
+        src=&quot;/static/6e91ee4040bbf8d1b62e54c2140409f3/37523/jupyter_notebook_example.png&quot;
+        srcset=&quot;/static/6e91ee4040bbf8d1b62e54c2140409f3/e9ff0/jupyter_notebook_example.png 180w,
+/static/6e91ee4040bbf8d1b62e54c2140409f3/f21e7/jupyter_notebook_example.png 360w,
+/static/6e91ee4040bbf8d1b62e54c2140409f3/37523/jupyter_notebook_example.png 720w,
+/static/6e91ee4040bbf8d1b62e54c2140409f3/302a4/jupyter_notebook_example.png 1080w,
+/static/6e91ee4040bbf8d1b62e54c2140409f3/2cffa/jupyter_notebook_example.png 1092w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;photo_url
 name
 name&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;_url&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

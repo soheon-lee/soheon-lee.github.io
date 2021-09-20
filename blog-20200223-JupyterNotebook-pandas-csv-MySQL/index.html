@@ -217,7 +217,28 @@ release_date <span class="token operator">=</span> <span class="token punctuatio
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>product_chart<span class="token punctuation">)</span></code></pre></div>
 <p>이렇게 만들고 <code class="language-text">df</code> 변수를 확인해보자
-<img src="../../essets/pandas_df.png" alt="pandas_df">
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/ElEQVQY01VRi26EMAy7///B2w3E8X4WCgW1MEBeXB1oQ4rSxrHjlMdmFmxuxbqucNbhOI47tm3DsizY990Ha9ZaWOfuGnlmNpjn2WMPnCd+hNj3PcqyRNd1aNsWSim5FyiKQmoKVVWhlgiCAEmSoq5rNE0jeI4wDJGmqdxbEZSPk8dxxDBodCLGRgqTNE0TjDEYtYaWyPPcD2OdnEuYZ7q8BfteeVAPg3dLMokUY46iCHEcezd0yx66/369PPZP8JS12UBXfzNXpyDF4/cbmayVJIkfQJxuv55PZFnmBenaC/Jx9Wel4eOQ+VqNP4f5wjmEmW9OtxxMnA5/AUA+xoPSmLP0AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="pandas_df"
+        title="pandas_df"
+        src="/static/e557d56b14c5fe17c72f6c89f5552036/37523/pandas_df.png"
+        srcset="/static/e557d56b14c5fe17c72f6c89f5552036/e9ff0/pandas_df.png 180w,
+/static/e557d56b14c5fe17c72f6c89f5552036/f21e7/pandas_df.png 360w,
+/static/e557d56b14c5fe17c72f6c89f5552036/37523/pandas_df.png 720w,
+/static/e557d56b14c5fe17c72f6c89f5552036/f53a0/pandas_df.png 1062w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span>
 그냥 이렇게 볼 수 있다니..
 지금은 ‘release_date’가 필요없고, 행의 시작 index도 0부터 시작이 아니라 1부터 시작이었으면 좋겠다.</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df<span class="token punctuation">.</span>drop<span class="token punctuation">(</span>columns <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'release_date'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>

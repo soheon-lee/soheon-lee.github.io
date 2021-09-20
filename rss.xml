@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 06:45:17 GMT</lastBuildDate><item><title><![CDATA[10개월차 코딩 부트캠프 멘토, 2020년 회고록]]></title><description><![CDATA[202…]]></description><link>https://www.zoomkoding.com/blog-20210214-ThrowBack2020/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210214-ThrowBack2020/</guid><pubDate>Sun, 14 Feb 2021 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2020년은 누군가에게 멘토링을 하는 시간으로 가득 채웠다. 하루가 다르게 성장하는 스타트업에서, 매일이 순식간에 지나가는 부트캠프에서, 나는 어떻게 한 해를 보내었는가를 돌아본다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 06:45:56 GMT</lastBuildDate><item><title><![CDATA[10개월차 코딩 부트캠프 멘토, 2020년 회고록]]></title><description><![CDATA[202…]]></description><link>https://www.zoomkoding.com/blog-20210214-ThrowBack2020/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210214-ThrowBack2020/</guid><pubDate>Sun, 14 Feb 2021 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;2020년은 누군가에게 멘토링을 하는 시간으로 가득 채웠다. 하루가 다르게 성장하는 스타트업에서, 매일이 순식간에 지나가는 부트캠프에서, 나는 어떻게 한 해를 보내었는가를 돌아본다.&lt;/p&gt;
 &lt;h2 id=&quot;누가-코딩-부트캠프에-오는걸까&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B0%80-%EC%BD%94%EB%94%A9-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84%EC%97%90-%EC%98%A4%EB%8A%94%EA%B1%B8%EA%B9%8C&quot; aria-label=&quot;누가 코딩 부트캠프에 오는걸까 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;누가 코딩 부트캠프에 오는걸까&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;그들은 진심이고, 그 옆에서 같이 일을 하고 있는 나 또한 어느 한 순간도 진심이지 않을 수 없다.&lt;/p&gt;
@@ -334,7 +334,28 @@ release_date &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;spa
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; pandas &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; pd
 df &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; pd&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;DataFrame&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;product_chart&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;이렇게 만들고 &lt;code class=&quot;language-text&quot;&gt;df&lt;/code&gt; 변수를 확인해보자
-&lt;img src=&quot;../../essets/pandas_df.png&quot; alt=&quot;pandas_df&quot;&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.22222222222222%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/ElEQVQY01VRi26EMAy7///B2w3E8X4WCgW1MEBeXB1oQ4rSxrHjlMdmFmxuxbqucNbhOI47tm3DsizY990Ha9ZaWOfuGnlmNpjn2WMPnCd+hNj3PcqyRNd1aNsWSim5FyiKQmoKVVWhlgiCAEmSoq5rNE0jeI4wDJGmqdxbEZSPk8dxxDBodCLGRgqTNE0TjDEYtYaWyPPcD2OdnEuYZ7q8BfteeVAPg3dLMokUY46iCHEcezd0yx66/369PPZP8JS12UBXfzNXpyDF4/cbmayVJIkfQJxuv55PZFnmBenaC/Jx9Wel4eOQ+VqNP4f5wjmEmW9OtxxMnA5/AUA+xoPSmLP0AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pandas_df&quot;
+        title=&quot;pandas_df&quot;
+        src=&quot;/static/e557d56b14c5fe17c72f6c89f5552036/37523/pandas_df.png&quot;
+        srcset=&quot;/static/e557d56b14c5fe17c72f6c89f5552036/e9ff0/pandas_df.png 180w,
+/static/e557d56b14c5fe17c72f6c89f5552036/f21e7/pandas_df.png 360w,
+/static/e557d56b14c5fe17c72f6c89f5552036/37523/pandas_df.png 720w,
+/static/e557d56b14c5fe17c72f6c89f5552036/f53a0/pandas_df.png 1062w&quot;
+        sizes=&quot;(max-width: 720px) 100vw, 720px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
 그냥 이렇게 볼 수 있다니..
 지금은 ‘release_date’가 필요없고, 행의 시작 index도 0부터 시작이 아니라 1부터 시작이었으면 좋겠다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;df&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;drop&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;columns &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;release_date&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;

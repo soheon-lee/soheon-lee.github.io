@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 07:34:38 GMT</lastBuildDate><item><title><![CDATA[Django과 Reverse relation과 related_name]]></title><description><![CDATA[정참조와 역참조 객체 서로 호출하기 데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어,  테이블과 사용자의 직업인  테이블이 있다. 두 테이블은 N:…]]></description><link>https://www.zoomkoding.com/blog-20210614-Django-Related_name/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210614-Django-Related_name/</guid><pubDate>Sun, 14 Jun 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;정참조와-역참조-객체-서로-호출하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%B0%B8%EC%A1%B0%EC%99%80-%EC%97%AD%EC%B0%B8%EC%A1%B0-%EA%B0%9D%EC%B2%B4-%EC%84%9C%EB%A1%9C-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0&quot; aria-label=&quot;정참조와 역참조 객체 서로 호출하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정참조와 역참조 객체 서로 호출하기&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[leework.com]]></title><description><![CDATA[이워크의 개발일기]]></description><link>https://www.zoomkoding.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 20 Sep 2021 07:35:07 GMT</lastBuildDate><item><title><![CDATA[Django과 Reverse relation과 related_name]]></title><description><![CDATA[정참조와 역참조 객체 서로 호출하기 데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어,  테이블과 사용자의 직업인  테이블이 있다. 두 테이블은 N:…]]></description><link>https://www.zoomkoding.com/blog-20210614-Django-Related_name/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20210614-Django-Related_name/</guid><pubDate>Sun, 14 Jun 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;정참조와-역참조-객체-서로-호출하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EC%B0%B8%EC%A1%B0%EC%99%80-%EC%97%AD%EC%B0%B8%EC%A1%B0-%EA%B0%9D%EC%B2%B4-%EC%84%9C%EB%A1%9C-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0&quot; aria-label=&quot;정참조와 역참조 객체 서로 호출하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정참조와 역참조 객체 서로 호출하기&lt;/h1&gt;
 &lt;p&gt;데이터베이스에서 두 테이블이 참조 관계에 있는 경우를 생각해보자. 예를 들어, &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 테이블과 사용자의 직업인 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 테이블이 있다. 두 테이블은 N:1 관계에 있으며, &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 객체가 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 객체를 참조하고 있다. &lt;code class=&quot;language-text&quot;&gt;User&lt;/code&gt; 가 &lt;code class=&quot;language-text&quot;&gt;Occupation&lt;/code&gt; 을 선택하여 입사 원서를 작성한다고 가정해보자.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;models&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Model&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
     name	&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; models&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;CharField&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;max_length &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
@@ -294,6 +294,247 @@ sample rate는 음악별로 다르지만, jamendo 홈페이지에서 다운받�
 &lt;li&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC-2&quot;&gt;결과 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Django로 스트리밍 하기 part1 - binary streaming]]></title><description><![CDATA[사전 연습 - text streaming 음악 스트리밍 웹인 TIDAL…]]></description><link>https://www.zoomkoding.com/blog-20200315-Django-Streaming-Part1/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20200315-Django-Streaming-Part1/</guid><pubDate>Sun, 15 Mar 2020 10:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;사전-연습---text-streaming&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%A0%84-%EC%97%B0%EC%8A%B5---text-streaming&quot; aria-label=&quot;사전 연습   text streaming permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사전 연습 - text streaming&lt;/h1&gt;
+&lt;p&gt;음악 스트리밍 웹인 TIDAL을 클론하기 위해서는 음악 스트리밍 기능을 구현하는 것이 가장 중요하다. 음악 스트리밍을 위해서 사전 연습으로 우선 텍스트 스트리밍을 먼저 해보려고 한다.&lt;/p&gt;
+&lt;p&gt;과정은 아래와 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;파일 이름을 path parameter로 받기&lt;/li&gt;
+&lt;li&gt;해당하는 파일을 불러내기&lt;/li&gt;
+&lt;li&gt;그 파일 속에 문구를 streaming으로 보내기&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;파일-준비&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%BC-%EC%A4%80%EB%B9%84&quot; aria-label=&quot;파일 준비 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;파일 준비&lt;/h2&gt;
+&lt;p&gt;내가 준비한 파일은 text_sample이라는 단순 텍스트 파일이다. 파일 내부에는 볼빨간 사춘기 - 별 보러 갈래 의 가사가 담겨있다.&lt;/p&gt;
+&lt;details markdown=&quot;1&quot;&gt;
+  &lt;summary&gt; text_sample &lt;/summary&gt;
+  Maybe it&apos;s like a dream  
+  I see the stars over me  
+  Maybe it&apos;s like a magic  
+  I know you, you, you&apos;re my star  
+  Saturday night 재미없는 얘기  
+  No beer, no cheers 우리 둘만 여기  
+  재미없는 사람끼리 눈이 맞았나 봐  
+  You&apos;ve heard of my songs  
+  어떤 별을 가장 좋아하냐며  
+  미소를 띠고 내게 말해  
+  별 보러 갈래?  
+  Listen to our favorite songs  
+  좋아하는 노랠 듣고  
+  웃고 떠들다 보면  
+  We drive away  
+  어느새 멋진 바다  
+  위로 별들이 쏟아져내려  
+  Can&apos;t you see the stars?
+  They called it milky way 쏟아져 머리 위로
+  넌 나를 업고 모래사장을 뛰어다녀, yeah
+  그중 가장 예쁜 저 별을 찾아서
+  밤이 새도록 뛰어다니고
+  Stars are over me
+  Maybe I know the name
+  I see the stars over me
+  Maybe you got a planet
+  I know you, you got my star
+  Everyday night 매일 같은 얘기
+  No feeling, no chilling 우리 둘만 여기
+  재미없는 사람끼리 눈이 맞았나 봐
+  You&apos;ve heard of my songs
+  어떤 별을 가장 좋아하냐며
+  미소를 띠고 내게 말해
+  별 보러 갈래?
+  Listen to our favorite songs
+  좋아하는 노랠 듣고
+  웃고 떠들다 보면
+  We drive away
+  어느새 멋진 바다
+  위로 별들이 쏟아져내려
+  Can&apos;t you see the stars?
+  모래 위에 누워서
+  저 별을 다 세보다가
+  아름다웠던 우리 이 순간을
+  저 별에 담아서
+  We fell in love
+  See the star
+  Be your star, yeah, yeah
+  They called it milky way 쏟아져 머리 위로
+  넌 나를 업고 모래사장을 뛰어다녀, yeah
+  그중 가장 예쁜 저 별을 찾아서
+  밤이 새도록 뛰어다니고
+  Stars are over me
+&lt;/details&gt;
+&lt;h2 id=&quot;viewspy-내부-로직&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#viewspy-%EB%82%B4%EB%B6%80-%EB%A1%9C%EC%A7%81&quot; aria-label=&quot;viewspy 내부 로직 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;views.py 내부 로직&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; django&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;http  &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; StreamingHttpResponse
+
+    &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;StreamTextView&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;View&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; request&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          in_file &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;GET&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;file_name&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;   stream    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iteration&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in_file&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;   response  &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; StreamingHttpResponse&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; content_type &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;text/event-stream&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+          response&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Cache-Control&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;no-cache&apos;&lt;/span&gt;
+
+          &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; response
+
+        &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; Exception &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; identifier&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;identifier&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;   &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;iteration&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; in_file&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in_file&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;rb+&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; f&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; f&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;read&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;       &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; c
+            &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+              &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;[1] HttpResponse, JsonResponse 외에도 &lt;strong&gt;StreamingHttpResponse&lt;/strong&gt; 를 import 한다.&lt;/li&gt;
+&lt;li&gt;[2] query string 으로 받은 in_file에서 내부 내용을 가져오는 과정을 처리한다.&lt;/li&gt;
+&lt;li&gt;[3] 처리해서 받은 내부 내용을 &lt;strong&gt;response&lt;/strong&gt;에 담아 return&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;[2]의 과정을 좀 더 자세히 보자.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;iteration이라는 함수는 [4]에 있는데, in_file이라는 파일을 f 라는 이름으로 연다.&lt;/li&gt;
+&lt;li&gt;c = f.read()로 읽은 문장을 할당한다.&lt;/li&gt;
+&lt;li&gt;문장 c 가 있으면 &lt;code class=&quot;language-text&quot;&gt;yield c&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;yield 한 문장이 [2] stream 변수에, 분할되어 (스트리밍되어) 할당되는 것이다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;yield&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#yield&quot; aria-label=&quot;yield permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;yield?&lt;/h2&gt;
+&lt;p&gt;우선 &lt;code class=&quot;language-text&quot;&gt;return&lt;/code&gt;과 마찬가지로 함수의 결과를 반환하는 역할을 한다. 그렇다면 차이점은 무엇일까?&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span style=&quot;color:darkblue; background-color:beige; padding:2px;&quot;&gt;Return&lt;/span&gt;&lt;/strong&gt; sends a specified value back to its caller whereas &lt;strong&gt;&lt;span style=&quot;color:green; background-color:beige; padding:2px;&quot;&gt;Yield&lt;/span&gt;&lt;/strong&gt; can produce a sequence of values. We should use yield when we want to iterate over a sequence, but don’t want to store the entire sequence in memory. &lt;a href=&quot;https://www.geeksforgeeks.org/use-yield-keyword-instead-return-keyword-python/&quot;&gt;reference&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;즉, return은 결과를 한 번에 반환하고, yield는 결과의 시퀀스를 반환하여, 결과를 순회하여 응용할 때 사용하면 된다. 따라서, yield를 사용하면 파이썬 함수를 제너레이터로 사용할 수 있게 된다.&lt;/p&gt;
+&lt;p&gt;스트리밍은, &lt;strong&gt;결과를 연쇄적으로 반환하는 과정&lt;/strong&gt;이기 때문에 yield를 쓰는 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;결과 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과&lt;/h2&gt;
+&lt;p&gt;실행시켜보자&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;http -v &lt;span class=&quot;token number&quot;&gt;10.58&lt;/span&gt;.2.53:8001/music/text?file_name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;text_sample&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;Maybe it&lt;span class=&quot;token string&quot;&gt;&apos;s like a dream
+I see the stars over me
+Maybe it&apos;&lt;/span&gt;s like a magic
+I know you, you, you&lt;span class=&quot;token string&quot;&gt;&apos;re my star
+Saturday night ì¬ë¯¸ìë ì
+                           ë¡ ë³
+                                 ë¤ì´ ìì
+                                            ì ¸ë´ë ¤
+Can&apos;&lt;/span&gt;t you see the stars?
+They called it milky way ìì
+                             ì ¸ ë¨¸ë¦¬ ì
+                                          ë¡
+ë
+  ë ì  ë³
+            ì
+               ì°¾ì
+                    ì
+                     
+ë°¤ì´ ìë
+          ë¡ ë°ì´ë¤ëê³ 
+Stars are over me
+Maybe I know the name
+I see the stars over me
+Maybe you got a planet
+I know you, you got my star
+Everyday night ë§¤ì¼ ê°ì ì
+                              ë¡ ë³
+                                    ë¤ì´ ìì
+                                               ì ¸ë´ë ¤&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;한글이 왜 이렇게까지 깨지는 지는 참 의문이다 ;;&lt;/p&gt;
+&lt;h1 id=&quot;본편---음악-파일&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B3%B8%ED%8E%B8---%EC%9D%8C%EC%95%85-%ED%8C%8C%EC%9D%BC&quot; aria-label=&quot;본편   음악 파일 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;본편 - 음악 파일&lt;/h1&gt;
+&lt;p&gt;다행히, text file을 음악 파일로 바꿔주기만 하면 된다.&lt;br&gt;
+대신 쿼리 스트링으로 음악 파일이 아닌 음악의 track_id를 받아와서, 그 track의 url로 연결지어 줄 것이다.&lt;/p&gt;
+&lt;h2 id=&quot;viewspy&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#viewspy&quot; aria-label=&quot;viewspy permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;views.py&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;StreamTextView&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;View&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; request&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            track_id    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; request&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;GET&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;track_id&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            track       &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Track&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;objects&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;get&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token builtin&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; track_id&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            music_url   &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; track&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;music_url
+            stream      &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;iteration&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;music_url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            response    &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; StreamingHttpResponse&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; status &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; content_type &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;text/event-stream&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            response&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Cache-Control&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;no-cache&apos;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; response
+        &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; Exception &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; identifier&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;indentifier&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;iteration&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;self&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; music_url&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;music_url&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;rb+&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; f&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                c &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; f&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;read&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; c&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;yield&lt;/span&gt; c
+                &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+                    &lt;span class=&quot;token keyword&quot;&gt;break&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;결과-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC-1&quot; aria-label=&quot;결과 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과&lt;/h2&gt;
+&lt;p&gt;실행시켜 보자&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;http -v &lt;span class=&quot;token number&quot;&gt;10.58&lt;/span&gt;.2.53:8001/music/text?track_id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;GET /music/text?track_id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Host: &lt;span class=&quot;token number&quot;&gt;10.58&lt;/span&gt;.2.53:8001
+User-Agent: HTTPie/2.1.0-dev
+
+
+
+HTTP/1.1 &lt;span class=&quot;token number&quot;&gt;200&lt;/span&gt; OK
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/event-stream
+Date: Sun, &lt;span class=&quot;token number&quot;&gt;15&lt;/span&gt; Mar &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;13&lt;/span&gt;:37:17 GMT
+Server: WSGIServer/0.2 CPython/3.7.4
+Vary: Origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+
+
+
++-----------------------------------------+
+&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; NOTE: binary data not shown &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; terminal &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
++-----------------------------------------+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;????&lt;/h2&gt;
+&lt;p&gt;바이너리 파일을 터미널에서 볼 수 없다고 ??&lt;/p&gt;
+&lt;h2 id=&quot;해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;http -v &lt;span class=&quot;token number&quot;&gt;10.58&lt;/span&gt;.2.53:8001/music/text?track_id&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; a
+
+xxd a
+xxd -b a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이러면 된다 ~&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;00113ff0: &lt;span class=&quot;token number&quot;&gt;2240&lt;/span&gt; 33c5 07b6 18e4 be3c ce1f 82f5 b8ee  .@3&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114000: 33dc dda5 d286 eec1 da0b b747 7afb &lt;span class=&quot;token number&quot;&gt;6792&lt;/span&gt;  &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;Gz.g.
+00114010: &lt;span class=&quot;token number&quot;&gt;3207&lt;/span&gt; 51df &lt;span class=&quot;token number&quot;&gt;8021&lt;/span&gt; d97e e451 66e7 &lt;span class=&quot;token number&quot;&gt;1383&lt;/span&gt; db78  &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;.Q&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;.~.Qf&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;x
+00114020: 02cc 6a0e &lt;span class=&quot;token number&quot;&gt;8252&lt;/span&gt; b149 ca1a e261 c3cc b3b2  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;j&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;R.I&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.a&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114030: f9eb 52d8 f41d &lt;span class=&quot;token number&quot;&gt;3300&lt;/span&gt; f6f7 cb7f e8a2 561c  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;R&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.3&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.V.
+00114040: 7bfc &lt;span class=&quot;token number&quot;&gt;4874&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5375&lt;/span&gt; dafb 0347 f975 1d34 bf17  &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;.HtSu&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.G.u.4&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114050: deac d4b6 3f94 426a 397f b2aa b24b 13dd  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;?.Bj9&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;K&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114060: 0843 a9c5 d8cb &lt;span class=&quot;token number&quot;&gt;2725&lt;/span&gt; f108 729a &lt;span class=&quot;token number&quot;&gt;3135&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3365&lt;/span&gt;  .C&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;w%&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;r.153e
+00114070: f6a7 a94d 7e53 4b86 78fe afd0 d9b9 6a8a  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.M~SK.x&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.j.
+00114080: 1f95 ddaf da96 2c75 f88d 2e46 0916 600a  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;,u&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.F&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;b.
+00114090: e21e &lt;span class=&quot;token number&quot;&gt;6190&lt;/span&gt; 23f2 b0ec 9e05 676e ffff ffe0  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;a.&lt;span class=&quot;token comment&quot;&gt;#.....gn....&lt;/span&gt;
+001140a0: 40c4 bbd6 0000 6e09 &lt;span class=&quot;token number&quot;&gt;8044&lt;/span&gt; 0a60 46e3 &lt;span class=&quot;token number&quot;&gt;4514&lt;/span&gt;  @&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.n&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;D&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;F.E.
+001140b0: &lt;span class=&quot;token number&quot;&gt;8931&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2921&lt;/span&gt; a89b 82da d05a ec0d &lt;span class=&quot;token number&quot;&gt;9032&lt;/span&gt; f03c  .1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.Z&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.2.&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;
+001140c0: 483a 0116 &lt;span class=&quot;token number&quot;&gt;1734&lt;/span&gt; 2c12 0c23 &lt;span class=&quot;token number&quot;&gt;9960&lt;/span&gt; 0a9a a051  H:&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.4,&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;#.`...Q&lt;/span&gt;
+001140d0: 0018 3c01 0003 &lt;span class=&quot;token number&quot;&gt;8680&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9181&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8587&lt;/span&gt; ed9c 04a8  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.
+001140e0: 90b8 808a &lt;span class=&quot;token number&quot;&gt;7397&lt;/span&gt; bc15 1ab8 &lt;span class=&quot;token number&quot;&gt;5410&lt;/span&gt; 7cd3 0444  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.T.&lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;D
+001140f0: be31 &lt;span class=&quot;token number&quot;&gt;9553&lt;/span&gt; 30e4 &lt;span class=&quot;token number&quot;&gt;4687&lt;/span&gt; 5e69 &lt;span class=&quot;token number&quot;&gt;8984&lt;/span&gt; 80d7 31d8  .1.S0.F.^i&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;.
+00114100: &lt;span class=&quot;token number&quot;&gt;8042&lt;/span&gt; 0597 a243 1b7f 648c 8d60 &lt;span class=&quot;token number&quot;&gt;9219&lt;/span&gt; a734  .B&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.C&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;d&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+00114110: 976e 1c7d e34b b16a 060b &lt;span class=&quot;token number&quot;&gt;6772&lt;/span&gt; a809 f3ca  .n.&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;.K.j&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;gr&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114120: 8a18 6dda b3b7 2ad4 adef 985c 8f24 &lt;span class=&quot;token number&quot;&gt;3701&lt;/span&gt;  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;m&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.*&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;.&lt;span class=&quot;token variable&quot;&gt;$7&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;.&lt;/span&gt;
+00114130: 5d9d 87e3 709a 96ea c5e5 1f04 &lt;span class=&quot;token number&quot;&gt;6715&lt;/span&gt; 5d0e  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.p&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.g.&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;.
+00114140: &lt;span class=&quot;token number&quot;&gt;7431&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1853&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;7913&lt;/span&gt; b96e &lt;span class=&quot;token number&quot;&gt;4953&lt;/span&gt; 1d53 ea17 279f  t1.Sy&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;nIS.S&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114150: a3a2 a09d 92c3 f632 75e6 3d73 aa79 e6de  &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.2u.&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;s.y&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+00114160: 65af c429 e293 ecbe &lt;span class=&quot;token number&quot;&gt;3120&lt;/span&gt; dbf9 25ff fbe0  e&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;%&lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;10.58.2.53:8001/music/text?track_id=1&lt;/strong&gt;&lt;br&gt;
+이걸 chrome 주소창에 입력하면, 크롬 브라우저가 binary를 읽어서 파일을 재생시켜줌 !&lt;/p&gt;
+&lt;hr&gt;
+&lt;div class=&quot;table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#%ED%8C%8C%EC%9D%BC-%EC%A4%80%EB%B9%84&quot;&gt;파일 준비&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#viewspy-%EB%82%B4%EB%B6%80-%EB%A1%9C%EC%A7%81&quot;&gt;views.py 내부 로직&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#yield&quot;&gt;yield?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC&quot;&gt;결과&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#viewspy&quot;&gt;views.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC-1&quot;&gt;결과&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#&quot;&gt;????&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot;&gt;해결&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Django에 MySQL 연결하여 데이터 저장하기]]></title><description><![CDATA[Django에서는 기본 데이터 베이스로 sqlite3를 제공해준다. setting.py 파일을 보면 sqlite3에 대한 설정을 확인할 수 있다. 아래와 같다. 나는 앞으로 MySQL을 사용할 것이기 때문에, 이 기본 정보를 바꾸고 Django…]]></description><link>https://www.zoomkoding.com/blog-20200217-Django-Connect-MySQL/</link><guid isPermaLink="false">https://www.zoomkoding.com/blog-20200217-Django-Connect-MySQL/</guid><pubDate>Mon, 17 Feb 2020 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Django에서는 기본 데이터 베이스로 sqlite3를 제공해준다. setting.py 파일을 보면 sqlite3에 대한 설정을 확인할 수 있다. 아래와 같다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;DATABASES &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;

@@ -29,9 +29,9 @@ export default ({ data }) => {
       <Bio author={author} language={language} />
       <Tabs className={'tabs'} value={tabIndex} onChange={onTabIndexChange} tabs={categories} />
       <PostCardsColumn
-        posts={categoryPosts.slice(0, 4)}
+        posts={categoryPosts.slice(0, 10)}
         moreUrl={`posts/${tabIndex === 0 ? '' : categories[tabIndex]}`}
-        showMoreButton={categoryPosts.length > 4}
+        showMoreButton={categoryPosts.length > 10}
       />
     </Layout>
   );

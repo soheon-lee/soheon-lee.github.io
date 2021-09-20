@@ -217,7 +217,7 @@ release_date <span class="token operator">=</span> <span class="token punctuatio
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
 df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>product_chart<span class="token punctuation">)</span></code></pre></div>
 <p>이렇게 만들고 <code class="language-text">df</code> 변수를 확인해보자
-<img src="./image/pandas_df.png" alt="pandas_df">
+<img src="../../essets/pandas_df.png" alt="pandas_df">
 그냥 이렇게 볼 수 있다니..
 지금은 ‘release_date’가 필요없고, 행의 시작 index도 0부터 시작이 아니라 1부터 시작이었으면 좋겠다.</p>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python">df<span class="token punctuation">.</span>drop<span class="token punctuation">(</span>columns <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'release_date'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>

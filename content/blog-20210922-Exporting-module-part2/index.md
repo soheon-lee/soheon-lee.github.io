@@ -1,7 +1,7 @@
 ---
 emoji: 👑
-title: Node.js & Module - PART1 (module.exports)
-date: '2021-09-21 02:00:00'
+title: Node.js & Module - PART2 (import/export .mjs file)
+date: '2021-09-22 19:00:00'
 author: 이워크
 tags: node express react wecodefullstack 위코드풀스택 위코드 wecode module.exports export require import
 categories: 개발블로그
@@ -97,7 +97,8 @@ module.exports = greeting;
 module.exports = greeting2;
 ```
 
-이렇게 할 수는 없다. `module.exports`라는 객체에 재할당 되었으므로, 덮어씌워졌다고 할 수 있다. greeting2만 내보내지기 때문에 다른 모듈에서는 `greeting2`만 사용할 수 있다.
+이렇게 할 수는 없다. `module.exports`라는 객체에 재할당 되었으므로, 덮어씌워졌다고 할 수 있다. `greeting2`만 사용할 수 있다.
+한가지
 
 아래와 같이 하나의 객체로 내보내야한다.
 
@@ -174,26 +175,7 @@ const sayHello = (name) => {
 
 ## 그 외
 
-### 1.require 할 수 있는 파일은 `.js` 파일 뿐
-
-ex1_greeting.js 파일의 확장자를 변경해보자.
-
-- ex1_greeting.mjs
-- ex1_greeting.js2
-
-```sh
-internal/modules/cjs/loader.js:1033
-  throw err;
-  ^
-
-Error: Cannot find module './ex1_greeting'
-Require stack:
-- /Users/soheonlee/Development/JS_module_tutorial/ex2_sayHello.js
-```
-
-해당 모듈을 찾을 수 없다는 에러가 발생한다. require할 수 있는 대상은 `.js` 확장자 파일뿐이다.
-
-### 2.require은 일단 파일을 한 번 실행시킨다
+### require은 일단 파일을 한 번 실행시킨다
 
 위에서 한 번 언급했는데, require() 함수는 파일을 불러오면서 기본적으로 한 번 실행한다. 따라서 `ex1` 모듈에
 
@@ -202,10 +184,6 @@ console.log('안녕, 나는 ex1 파일이야');
 ```
 
 라는 코드가 있다면 `ex2` 모듈에서 require하자마자 콘솔로그가 실행된다.
-
-### 3.require 은 파일 어디에서나 사용 가능하다
-
-통상적으로 모듈을 불러는 과정은 파일 가장 상단에서 진행한다. 필요한 모듈을 미리 불러와 가독성을 높이고 디버깅을 쉽게 만드는 방법이다. 그러나 `require` 메소드는 파일 최상단이 아닌 그 어느 위치에서도 호출할 수 있다. 이와 같은 방법을 잘 사용하지 않을 뿐.
 
 ---
 

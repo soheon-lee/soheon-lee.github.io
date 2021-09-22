@@ -168,8 +168,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> greeting<span class="token punctuation">;</span>
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> greeting2<span class="token punctuation">;</span></code></pre></div>
-<p>이렇게 할 수는 없다. <code class="language-text">module.exports</code>라는 객체에 재할당 되었으므로, 덮어씌워졌다고 할 수 있다. <code class="language-text">greeting2</code>만 사용할 수 있다.
-한가지</p>
+<p>이렇게 할 수는 없다. <code class="language-text">module.exports</code>라는 객체에 재할당 되었으므로, 덮어씌워졌다고 할 수 있다. greeting2만 내보내지기 때문에 다른 모듈에서는 <code class="language-text">greeting2</code>만 사용할 수 있다.</p>
 <p>아래와 같이 하나의 객체로 내보내야한다.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
   greeting<span class="token punctuation">,</span>
@@ -232,6 +231,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 Error: Cannot find module &#39;./ex1_greeting&#39;
 Require stack:
 - /Users/soheonlee/Development/JS_module_tutorial/ex2_sayHello.js</code></pre></div>
+<p>해당 모듈을 찾을 수 없다는 에러가 발생한다. require할 수 있는 대상은 <code class="language-text">.js</code> 확장자 파일뿐이다.</p>
 <h3 id="2require은-일단-파일을-한-번-실행시킨다" style="position:relative;"><a href="#2require%EC%9D%80-%EC%9D%BC%EB%8B%A8-%ED%8C%8C%EC%9D%BC%EC%9D%84-%ED%95%9C-%EB%B2%88-%EC%8B%A4%ED%96%89%EC%8B%9C%ED%82%A8%EB%8B%A4" aria-label="2require은 일단 파일을 한 번 실행시킨다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.require은 일단 파일을 한 번 실행시킨다</h3>
 <p>위에서 한 번 언급했는데, require() 함수는 파일을 불러오면서 기본적으로 한 번 실행한다. 따라서 <code class="language-text">ex1</code> 모듈에</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'안녕, 나는 ex1 파일이야'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>

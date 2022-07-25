@@ -113,7 +113,7 @@ categories: 개발블로그
 
 **[2]의 과정을 좀 더 자세히 보자.**
 
-- iteration이라는 함수는 [4]에 있는데, in_file이라는 파일을 f 라는 이름으로 연다.
+- [iteration](https://www.scaler.com/topics/python/iterators-in-python/)이라는 함수는 [4]에 있는데, in_file이라는 파일을 f 라는 이름으로 연다.
 - c = f.read()로 읽은 문장을 할당한다.
 - 문장 c 가 있으면 `yield c`
 - yield 한 문장이 [2] stream 변수에, 분할되어 (스트리밍되어) 할당되는 것이다.
